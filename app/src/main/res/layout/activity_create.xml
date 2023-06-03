@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select incident type" />
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:gravity="left">
+
+                <!--adding a radio button -->
+                <RadioButton
+                    android:id="@+id/javaRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:text="Found"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <!--adding a radio button -->
+                <RadioButton
+                    android:id="@+id/cRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:text="Lost"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter title" />
+
+            <EditText
+                android:id="@+id/et_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="18sp"
+                android:background="@android:drawable/edit_text"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter date" />
+
+            <EditText
+                android:id="@+id/et_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="18sp"
+                android:background="@android:drawable/edit_text"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter mobile" />
+
+            <EditText
+                android:id="@+id/et_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:background="@android:drawable/edit_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter description" />
+
+            <EditText
+                android:id="@+id/et_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:minHeight="100dp"
+                android:background="@android:drawable/edit_text"                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter location" />
+
+            <EditText
+                android:id="@+id/et_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:background="@android:drawable/edit_text"                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCurrentLoc"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/holo_green_dark"
+                android:gravity="center"
+                android:text="Current location"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/holo_green_dark"
+                android:gravity="center"
+                android:text="Save"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

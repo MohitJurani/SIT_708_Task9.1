@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/label"
+        android:background="@android:drawable/status_bar_item_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Text"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:textColor="#666"
+        android:textSize="20sp" />
+
+</LinearLayout>
